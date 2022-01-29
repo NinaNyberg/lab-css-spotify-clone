@@ -29,6 +29,11 @@ nav ul {
   flex-direction: row;
 }
 
+ul li a {
+  list-style: none;
+  text-decoration: none;
+}
+
 #top-picture {
   float: right;
   height: 50px;
@@ -90,7 +95,7 @@ article h3 {
 
 article h3,
 p {
-  text-align: center;
+  text-align: start;
 }
 
 .section-two {
@@ -99,6 +104,7 @@ p {
   flex-direction: row;
   margin: 0 30px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .section-three {
@@ -107,9 +113,11 @@ p {
 }
 
 #spotify-green {
-  width: 10%;
+  width: 20%;
+  padding: 20px;
 }
 
 #app-img {
-  width: 50%;
+  width: 60%;
+  padding: 20px;
 }
