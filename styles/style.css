@@ -7,7 +7,11 @@ White: #FFF
 
 */
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  line-height: 1.3;
+  margin: 0;
+  /* letter-spacing: 1px; */
 }
 
 .top-row {
@@ -16,7 +20,8 @@ body {
 }
 
 nav {
-  /* position: fixed; */
+  position: fixed;
+  right: 0em;
 }
 
 nav ul {
@@ -24,7 +29,76 @@ nav ul {
   display: flex;
   flex-direction: row;
 }
+
 #top-picture {
   float: right;
   height: 50px;
+}
+
+.background-main-page {
+  background-image: url(/images/landing.jpg);
+  height: 800px;
+  background-size: cover;
+  background-position: center center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-main-page h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.background-main-page p {
+  font-size: 25px;
+  margin: 0;
+}
+
+.section-one {
+  color: black;
+}
+.section-one h1 {
+  text-align: center;
+  border-bottom: 10px;
+  border-bottom-color: #00b172;
+}
+
+article {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+article img {
+  width: 25%;
+}
+
+article h3 {
+  color: #00b172;
+}
+
+article h3,
+p {
+  text-align: center;
+}
+
+.section-two {
+  background-color: #00b172;
+  display: flex;
+  flex-direction: row;
+}
+
+#spotify-green {
+  width: 10%;
+}
+
+#app-img {
+  width: 30%;
 }
