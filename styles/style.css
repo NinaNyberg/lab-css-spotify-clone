@@ -80,7 +80,8 @@ ul li a {
 }
 .section-one h1 {
   text-align: center;
-  text-decoration: underline;
+  text-decoration: underline 3px;
+  text-underline-offset: 10px;
   text-decoration-color: #00b172;
 }
 
@@ -88,22 +89,22 @@ article {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 100px;
+  padding: 0 20px;
 }
 
 article div {
   display: flex;
   flex-direction: column;
-
   align-content: center;
-  margin: 20px 70px;
+  margin: 10px 0;
   align-items: center;
   text-align: center;
+  width: 25%;
 }
 
 article img {
   max-width: 100%;
-  width: 20%;
+  height: 30px;
 }
 
 article h3 {
@@ -126,22 +127,38 @@ p {
 }
 
 .section-three {
-  text-align: start;
-  padding: 20px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  /* align-items: left; */
+  /* align-content: flex-start; */
+  /* padding: 20px; */
+}
+
+.section-three div {
+  text-align: left;
+  margin-right: 20px;
+}
+
+.section-three h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: underline 3px;
+  text-underline-offset: 10px;
 }
 
 .green-img {
-  display: block;
-  margin: 0 auto;
+  flex: 1;
 }
 
 #spotify-green {
-  width: 20%;
+  width: 30%;
+}
+
+.app-image {
+  flex: 1;
 }
 
 #app-img {
-  width: 70%;
-  padding: 20px;
-  display: block;
-  margin: 0 auto;
+  width: 80%;
 }
