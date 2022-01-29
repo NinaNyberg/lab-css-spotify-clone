@@ -104,17 +104,17 @@ article div {
 
 article img {
   max-width: 100%;
-  height: 30px;
+  height: 40px;
 }
 
 article h3 {
   color: #00b172;
 }
 
-article h3,
+/* .second-page > h3,
 p {
   text-align: center;
-}
+} */
 
 .section-two {
   background-color: #00b172;
