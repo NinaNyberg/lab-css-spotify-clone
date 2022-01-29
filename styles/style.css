@@ -6,6 +6,11 @@ Green: #00B172
 White: #FFF
 
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -16,10 +21,14 @@ body {
 .top-row {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  /* margin: 10px 20px; */
+  background-color: white;
+  padding: 0.5em;
+  position: fixed;
 }
 
 nav {
-  position: fixed;
   right: 0em;
 }
 
@@ -32,16 +41,20 @@ nav ul {
 ul li a {
   list-style: none;
   text-decoration: none;
+  padding: 5px;
+  color: black;
 }
 
 #top-picture {
+  display: block;
+  margin-right: auto;
   float: right;
   height: 50px;
 }
 
 .background-main-page {
   background-image: url(/images/landing.jpg);
-  height: 800px;
+  height: 850px;
   background-size: cover;
   background-position: center center;
   /* text-align: center; */
@@ -52,13 +65,13 @@ ul li a {
 }
 
 .background-main-page h1 {
-  font-size: 70px;
+  font-size: 65px;
   margin-bottom: 10px;
   margin-top: 0;
 }
 
 .background-main-page p {
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -67,25 +80,29 @@ ul li a {
 }
 .section-one h1 {
   text-align: center;
-  border-bottom: 10px;
-  border-bottom-color: #00b172;
+  text-decoration: underline;
+  text-decoration-color: #00b172;
 }
 
 article {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 0 100px;
 }
 
 article div {
   display: flex;
   flex-direction: column;
+
   align-content: center;
-  /* padding: 10px; */
+  margin: 20px 70px;
   align-items: center;
+  text-align: center;
 }
 
 article img {
+  max-width: 100%;
   width: 20%;
 }
 
@@ -95,7 +112,7 @@ article h3 {
 
 article h3,
 p {
-  text-align: start;
+  text-align: center;
 }
 
 .section-two {
@@ -105,6 +122,7 @@ p {
   margin: 0 30px;
   align-items: center;
   justify-content: space-between;
+  padding: 30px;
 }
 
 .section-three {
@@ -112,12 +130,18 @@ p {
   padding: 20px;
 }
 
+.green-img {
+  display: block;
+  margin: 0 auto;
+}
+
 #spotify-green {
   width: 20%;
-  padding: 20px;
 }
 
 #app-img {
-  width: 60%;
+  width: 70%;
   padding: 20px;
+  display: block;
+  margin: 0 auto;
 }
